@@ -1,0 +1,49 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Header
+
+### Header
+
+**Bold**
+
+-   *apply*
+
+1.  jj
+2.  ii
+3.  oo
+
+```{r}
+hello <- 1 + 2
+hello
+head(hello)
+```
+
+For this mini-analysis, we will just have the following sections and code steps:
+
+## Introduction
+
+### read in data
+```{r}
+bg_chem <- read.csv("../data/BGchem2008data.csv")
+```
+
+
+### Analysis
+
+#### calculate summary statistics
+
+#### calculate mean Redfield ratio
+
+#### plot Redfield ratio
+```{r, echo=FALSE}
+plot(bg_chem$P, bg_chem$NO2 + bg_chem$NO3 + bg_chem$NH4)
+```
+
+
